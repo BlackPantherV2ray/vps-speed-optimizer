@@ -10,6 +10,10 @@
 
 An automated, 1-click Linux VPS Network Acceleration script designed to unleash the maximum throughput, reduce packet loss, eliminate bufferbloat, and optimize speeds for **VPN Servers (V2Ray / Xray / 3x-ui / OpenSSH / WireGuard), Web Servers, and Cloud VPS Nodes**.
 
+<p align="center">
+  <img src="preview.png" alt="VPS Speed Optimizer Terminal Preview" width="650" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+</p>
+
 ---
 
 ## ⚡ 1-Line Fast Execution (Instant Setup)
