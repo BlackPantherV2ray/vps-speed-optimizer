@@ -112,9 +112,11 @@ fi
 
 # 7. Verification & Status Report
 echo ""
-echo -e "${GREEN}${BOLD}=================================================================="
-echo -e "          🎉 VPS NETWORK ACCELERATION COMPLETED! 🎉              "
-echo -e "==================================================================${NC}"
+echo -e "${GREEN}${BOLD}"
+echo "=================================================================="
+echo "          🎉 VPS NETWORK ACCELERATION COMPLETED! 🎉               "
+echo "=================================================================="
+echo -e "${NC}"
 
 BBR_STATUS=$(sysctl net.ipv4.tcp_congestion_control 2>/dev/null | awk '{print $3}')
 QDISC_STATUS=$(sysctl net.core.default_qdisc 2>/dev/null | awk '{print $3}')
@@ -127,7 +129,9 @@ echo -e "  • ${BOLD}TCP Fast Open:${NC}           ${GREEN}Level 3 (Zero Handsh
 echo -e "  • ${BOLD}Concurrent File Limits:${NC}  ${GREEN}${LIMIT_STATUS}${NC} Connections"
 echo -e "  • ${BOLD}DNS Speed:${NC}               ${GREEN}Cloudflare (1.1.1.1) + Google (8.8.8.8)${NC}"
 
-echo -e "${CYAN}=================================================================="
-echo -e "  ✨ Speed Optimization Complete! Enjoy High Speed & Low Ping! ✨"
-echo -e "==================================================================${NC}"
+echo -e "${CYAN}${BOLD}"
+echo "=================================================================="
+echo "  ✨ Speed Optimization Complete! Enjoy High Speed & Low Ping! ✨"
+echo "=================================================================="
+echo -e "${NC}"
 echo ""
