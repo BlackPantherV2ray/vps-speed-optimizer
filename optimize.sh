@@ -113,8 +113,8 @@ fi
 # 7. Verification & Status Report
 echo ""
 echo -e "${GREEN}${BOLD}=================================================================="
-echo "          🎉 VPS NETWORK ACCELERATION COMPLETED! 🎉              "
-echo "==================================================================${NC}"
+echo -e "          🎉 VPS NETWORK ACCELERATION COMPLETED! 🎉              "
+echo -e "==================================================================${NC}"
 
 BBR_STATUS=$(sysctl net.ipv4.tcp_congestion_control 2>/dev/null | awk '{print $3}')
 QDISC_STATUS=$(sysctl net.core.default_qdisc 2>/dev/null | awk '{print $3}')
